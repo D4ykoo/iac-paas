@@ -28,6 +28,7 @@ spec:
     - docu.universphere.cloud
     - kafkaui.universphere.cloud
     - mensabot.universphere.cloud
+    - a.universphere.cloud
   # Issuer references are always required.
   issuerRef:
     name: prod-issuer
