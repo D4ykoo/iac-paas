@@ -4,6 +4,7 @@ metadata:
   name: dependency-track-pv-volume-apiserver
   labels: 
     type: local
+    app: dependency-track-apiserver
 spec:
   # storageClassName: default
   capacity: 
@@ -32,6 +33,7 @@ metadata:
   name: dependency-track-pv-volume-postgres
   labels: 
     type: local
+    app: dependency-track-postgres
 spec:
   # storageClassName: default
   capacity: 

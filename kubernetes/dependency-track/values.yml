@@ -108,6 +108,9 @@ apiserver:
     - ReadWriteOnce
     enabled: true
     size: 8Gi
+    selector:
+      matchLabels:
+        app: dependency-track-apiserver
     annotations: {}
     # storageClass: ""
   podSecurityContext:
@@ -199,4 +202,9 @@ postgresql:
     username: deptrack
     password: deptrack
     database: deptrack
+  primary:
+    persistence:
+      selector:
+        matchLabels:
+          app: dependency-track-postgres
   readReplicas.replicaCount: 0
